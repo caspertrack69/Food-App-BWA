@@ -4,4 +4,10 @@
     <string name="order_now">Order Now</string>
     <string name="onboarding_title">Order Your\nFavorite Foods</string>
     <string name="onboarding_caption">180K Stores</string>
+
+    <string name="profile_picture">User\'s Profile Picture</string>
+    <string name="home_greeting">Howdy</string>
+    <string name="home_question">What do you want\nfor lunch?</string>
+    <string name="search_hint">Search pizza, burger, kebab</string>
+    <string name="categories">Categories</string>
 </resources>
