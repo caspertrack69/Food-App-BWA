@@ -14,4 +14,5 @@
 
     <string name="rating">Rating</string>
     <string name="food_image">Food Image</string>
+    <string name="bundle">Bundle</string>
 </resources>

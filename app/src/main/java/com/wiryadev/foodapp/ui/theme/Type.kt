@@ -26,6 +26,10 @@ val Typography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 22.sp,
     ),
+    h6 = TextStyle(
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 22.sp,
+    ),
     subtitle1 = TextStyle(
         fontWeight = FontWeight.SemiBold,
         fontSize = 16.sp,
