@@ -3,6 +3,7 @@ package com.wiryadev.foodapp.ui.features.home
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
@@ -21,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.wiryadev.foodapp.R
 import com.wiryadev.foodapp.ui.components.Categories
+import com.wiryadev.foodapp.ui.components.FoodItem
 import com.wiryadev.foodapp.ui.components.SearchBar
 import com.wiryadev.foodapp.ui.theme.FoodAppTheme
 
@@ -92,6 +94,30 @@ fun HomeScreen(
                 modifier = Modifier.padding(top = 12.dp),
                 onCategoryClick = {},
             )
+        }
+
+        item {
+            Text(
+                text = stringResource(id = R.string.most_ordered),
+                style = MaterialTheme.typography.subtitle1,
+                modifier = Modifier
+                    .padding(
+                        top = 24.dp,
+                        start = 24.dp,
+                        bottom = 12.dp,
+                    ),
+            )
+        }
+
+        items(uiState.foods) { food ->
+            FoodItem(
+                food = food,
+                onFoodClick = {},
+            )
+        }
+
+        item {
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }

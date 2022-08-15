@@ -2,7 +2,9 @@ package com.wiryadev.foodapp.ui.features.home
 
 import androidx.lifecycle.ViewModel
 import com.wiryadev.foodapp.data.model.Category
+import com.wiryadev.foodapp.data.model.Food
 import com.wiryadev.foodapp.data.model.dummyCategories
+import com.wiryadev.foodapp.data.model.dummyFoods
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -23,4 +25,5 @@ class HomeViewModel : ViewModel() {
 data class HomeUiState(
     val searchQuery: String = "",
     val categories: List<Category> = dummyCategories,
+    val foods: List<Food> = dummyFoods,
 )
