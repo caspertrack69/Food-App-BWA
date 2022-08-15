@@ -10,4 +10,8 @@
     <string name="home_question">What do you want\nfor lunch?</string>
     <string name="search_hint">Search pizza, burger, kebab</string>
     <string name="categories">Categories</string>
+    <string name="most_ordered">Most Ordered</string>
+
+    <string name="rating">Rating</string>
+    <string name="food_image">Food Image</string>
 </resources>
