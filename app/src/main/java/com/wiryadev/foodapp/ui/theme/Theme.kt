@@ -7,9 +7,10 @@ import androidx.compose.ui.graphics.Color
 
 private val LightColorPalette = lightColors(
     primary = Orange500,
+    background = White700,
     onPrimary = Color.White,
-    onBackground = Black700,
-    onSurface = Gray400,
+    onBackground = Gray400,
+    onSurface = Black700,
     onSecondary = Gray700,
 
 
