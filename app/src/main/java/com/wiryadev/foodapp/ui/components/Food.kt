@@ -50,11 +50,15 @@ fun FoodItem(
             Column {
                 Text(
                     text = food.name,
-                    style = MaterialTheme.typography.subtitle2,
+                    style = MaterialTheme.typography.subtitle2.copy(
+                        color = MaterialTheme.colors.onSurface,
+                    ),
                 )
                 Text(
                     text = food.type,
-                    style = MaterialTheme.typography.body2,
+                    style = MaterialTheme.typography.body2.copy(
+                        color = MaterialTheme.colors.onBackground,
+                    ),
                 )
             }
         }
@@ -63,7 +67,9 @@ fun FoodItem(
         ) {
             Text(
                 text = food.rating.toString(),
-                style = MaterialTheme.typography.subtitle2,
+                style = MaterialTheme.typography.subtitle2.copy(
+                    color = MaterialTheme.colors.onSurface,
+                ),
             )
             Image(
                 painter = painterResource(id = R.drawable.star_1),
