@@ -29,13 +29,15 @@ import com.wiryadev.foodapp.ui.theme.FoodAppTheme
 @ExperimentalMaterialApi
 @Composable
 fun HomeRoute(
-    viewModel: HomeViewModel = viewModel()
+    viewModel: HomeViewModel = viewModel(),
+    onFoodClick: (Int) -> Unit,
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
     HomeScreen(
         uiState = uiState,
         onQueryChange = viewModel::onQueryChanged,
+        onFoodClick = onFoodClick,
     )
 }
 
@@ -45,6 +47,7 @@ fun HomeScreen(
     uiState: HomeUiState,
     onQueryChange: (String) -> Unit,
     modifier: Modifier = Modifier,
+    onFoodClick: (Int) -> Unit,
 ) {
     LazyColumn(
         modifier = modifier,
@@ -112,7 +115,9 @@ fun HomeScreen(
         items(uiState.foods) { food ->
             FoodItem(
                 food = food,
-                onFoodClick = {},
+                onFoodClick = {
+                    onFoodClick(food.image)
+                },
             )
         }
 

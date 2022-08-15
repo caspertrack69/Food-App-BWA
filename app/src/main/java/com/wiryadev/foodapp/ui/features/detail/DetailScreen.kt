@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -35,13 +36,14 @@ fun DetailScreen(
             .verticalScroll(rememberScrollState())
             .fillMaxWidth()
             .padding(
-                vertical = 48.dp,
+                vertical = 32.dp,
                 horizontal = 24.dp,
             ),
     ) {
         Image(
             painter = painterResource(id = R.drawable.gyoza_photo),
             contentDescription = stringResource(id = R.string.food_image),
+            contentScale = ContentScale.FillWidth,
             modifier = Modifier
                 .clip(RoundedCornerShape(36.dp))
                 .fillMaxWidth(),
