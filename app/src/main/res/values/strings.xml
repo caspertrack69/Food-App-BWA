@@ -2,4 +2,6 @@
     <string name="app_name">Food App</string>
     <string name="explore_now">Explore Now</string>
     <string name="order_now">Order Now</string>
+    <string name="onboarding_title">Order Your\nFavorite Foods</string>
+    <string name="onboarding_caption">180K Stores</string>
 </resources>
