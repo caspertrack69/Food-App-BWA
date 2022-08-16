@@ -131,5 +131,5 @@ object MainNavigation {
     const val HOME_ROUTE = "home"
     const val DETAIL_ROUTE = "detail"
     
-    const val TRANSITION_DURATION = 750
+    const val TRANSITION_DURATION = 500
 }
